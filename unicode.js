@@ -11,6 +11,13 @@ Write a program that takes a string with at least two characters.
 Use charCodeAt to get the Unicode code points of the first two characters.
 Add the two code points together and assign the result to a variable named sumCodePoints.
 Input:
+
+let word = "Yo";
+let charOne = word.charCodeAt(0);
+let charTwo = word.charCodeAt(1);
+let sumCodePoints = charOne + charTwo;
+console.log(sumCodePoints);
+
 let inputString = "Hi";
 
 Expected Output:
@@ -28,6 +35,10 @@ Combine the two characters into a single string and assign it to a variable name
 Input:
 let codePoint1 = 65;
 let codePoint2 = 66;
+let convert = String.fromCharCode(codePoint1);
+let convert2 = String.fromCharCode(codePoint2);
+let combinedString = convert + convert2;
+console.log(combinedString);
 
 Expected Output:
 combinedString: "AB" // 65 = 'A', 66 = 'B', combined = "AB"
@@ -47,6 +58,25 @@ let index2 = 2;
 
 Expected Output:
 codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16
+
+
+
+let inputString = "Cat";
+let index1 = 0;
+let index2 = 2;
+
+let codePoint1 = inputString.charCodeAt(index1);
+let codePoint2 = inputString.charCodeAt(index2);
+
+console.log(inputString.charCodeAt(index1));
+console.log(inputString.charCodeAt(index2));
+
+let codePointDifference = codePoint1 - codePoint2;
+
+console.log("difference", codePointDifference);
+
+
+
 
 
 
@@ -75,6 +105,8 @@ Use the Unicode code points 72, 101, 108, and 108 (corresponding to the characte
 Use String.fromCharCode to create the word "Hell".
 Assign the result to a variable named wordFromCodePoints.
 
+
+
 Task 3: Swap First and Last Characters
 Take the string "Launch".
 Extract the Unicode code points of the first and last characters using charCodeAt.
@@ -86,15 +118,20 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0);
+let thirdCodePoint = inputString1.charCodeAt(2);
+console.log(firstCodePoint);
+console.log(thirdCodePoint);
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode(72, 101, 108);
+console.log(wordFromCodePoints);
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let char = inputString2.charCodeAt(0);
+let char2 = inputString2.charCodeAt(5);
+let swappedString = 
 
 // Log all results
 console.log({
